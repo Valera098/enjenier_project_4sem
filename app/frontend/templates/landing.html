@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+    <script src="{% static 'js/landing.js' %}" type="application/javascript"></script>
+    <link href="{% static 'fonts/Ubuntu-Regular.ttf' %}" rel="stylesheet">
+</head>
+<body>
+<div class="">
+    <nav class="arrowContainer left">
+        <div class="arrowLeft">
+            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 24 24">
+                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+            </svg>
+        </div>
+    </nav>
+    <main class="slider">
+        <section class="slide active">
+            <div class="centeringContainer">
+                <div class="dataContainer">
+                    <h1 class="header">Описание проблемы</h1>
+                    <p class="description">Моей задачей была разработка базы данных и панели администратора для
+                        веб-сервиса по выбору и заказу путешествия.</p>
+                </div>
+            </div>
+        </section>
+        <section class="slide">
+            <div class="centeringContainer">
+
+                <div class="dataContainer">
+                    <h1 class="header">Использованные технологии</h1>
+                    <p class="description">Как база данных используется MariaDB. На стороне сервера работает python с фреймворком django.</p>
+                </div>
+            </div>
+        </section>
+        <section class="slide">
+            <div class="centeringContainer">
+                <div class="dataContainer">
+                    <h1 class="header">Наша команда</h1>
+                    <p class="description">Проект выполнен Чивилевым Валерием.</p>
+                </div>
+            </div>
+        </section>
+        <section class="slide">
+            <div class="centeringContainer">
+                <div class="dataContainer">
+                    <h1 class="header">Результат работы</h1>
+                    <p class="description">Выполнен лендинг проекта, а также административная часть для редактирования
+                        базы данных.</p>
+                </div>
+            </div>
+        </section>
+        <section class="slide">
+            <div class="centeringContainer">
+                <div class="dataContainer">
+                    <h1 class="header">Видео-презентация работы</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <nav class="arrowContainer right">
+        <div class="arrowRight">
+            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 24 24">
+                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+            </svg>
+        </div>
+    </nav>
+</div>
+</body>
+</html>

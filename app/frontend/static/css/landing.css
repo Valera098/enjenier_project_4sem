@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Ubuntu-Regular';
+    background-image: url('https://images.hdqwalls.com/download/lake-minimal-red-4k-zd-1920x1080.jpg');
+    z-index: -1;
+    background-size: 100%;
+}
+
+.arrowLeft {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.arrowRight {
+    transform: translateY(-50%);
+}
+
+.arrowContainer {
+    width: 192px;
+    height: 100vh;
+    z-index: 2;
+}
+
+.arrowContainer.left {
+    position: absolute;
+    top: 50%;
+}
+
+.arrowContainer.right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.slide {
+    display: none;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+.slide .dataContainer{
+
+}
+.slide>.centeringContainer{
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+    display: inline-grid;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.dataContainer>.description{
+}
+.dataContainer>.header{
+    /*margin-top: unset;*/
+}
+.prevSlide.right{
+    animation-name: prevSlideRight;
+    animation-duration: 0.7s;
+    display: block;
+    position: absolute;
+}
+.nextSlide.right{
+    animation-name: nextSlideRight;
+    animation-duration: 0.7s;
+    display: block;
+    position: absolute;
+}
+.prevSlide.left{
+    animation-name: prevSlideLeft;
+    animation-duration: 0.7s;
+    display: block;
+    position: absolute;
+}
+.nextSlide.left{
+    animation-name: nextSlideLeft;
+    animation-duration: 0.7s;
+    display: block;
+    position: absolute;
+}
+@keyframes prevSlideRight {
+    0% {
+        transform: translate(0vw);
+    }
+    100% {
+        transform: translate(-100vw);
+    }
+}
+@keyframes nextSlideRight {
+    0% {
+        transform: translate(100vw);
+    }
+    100% {
+        transform: translate(0vw);
+    }
+}
+@keyframes prevSlideLeft {
+    0% {
+        transform: translate(0vw);
+    }
+    100% {
+        transform: translate(100vw);
+    }
+}
+@keyframes nextSlideLeft {
+    0% {
+        transform: translate(-100vw);
+    }
+    100% {
+        transform: translate(0vw);
+    }
+}

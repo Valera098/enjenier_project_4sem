@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class='container-sm mt-5'>
+    <div class='row d-flex justify-content-center'>
+        {% for res in resort %}
+        <div class='resort col-lg-10 col-md-12 card mt-2'>
+            <h5 class="card-title">{{res.name}}</h5>
+            <h6 class="card-subtitle text-muted">{{res.country}}</h6>
+            <p class="card-text">{{res.description}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

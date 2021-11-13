@@ -1,0 +1,23 @@
+.resort {
+    overflow: hidden;
+}
+@media screen and (max-width: 425px) {
+    .resort {
+        font-size: 1.2rem;
+    }
+    .resort > h5 {
+        font-size: 1.5rem;
+    }
+    .resort > h6 {
+        font-size: 1.3rem;
+    }
+}
+
+@media print {
+    navbar {
+        display: none;
+    }
+    .card {
+        border: none;
+    }
+}
